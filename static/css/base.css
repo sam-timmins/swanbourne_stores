@@ -7,12 +7,12 @@ font-family: 'Raleway', sans-serif;
 
 :root {
     /* Colour pallet 1 burgundy*/
-    --red: #989A9B;
+    /* --red: #989A9B;
     --white: #FFFFFF;
     --grey: #2B3A2D;
     --black: #000000;
     --charcol: #26242a;
-    --charcol-trans: rgba(38, 36, 42, 0.5);
+    --charcol-trans: rgba(38, 36, 42, 0.5); */
 
     /* Colour pallet 2 sage green */
     /* --red: #B2AC88;
@@ -30,7 +30,7 @@ font-family: 'Raleway', sans-serif;
     --charcol: #191919;
     --charcol-trans: rgba(25, 25, 25, 0.5); */
 
-    /* Colour pallet 2 sage green */
+    /* Colour pallet 2 dark red */
     /* --red: #8C6F56;
     --white: #FFFFFF;
     --grey: #D9BCA3;
@@ -48,12 +48,12 @@ font-family: 'Raleway', sans-serif;
    
 
     /* Colour pallet 3 aqua */
-    /* --red: #557373;
+    --red: #557373;
     --white: #FFFFFF;
     --grey: #c3c1c1;
     --black: #000000;
     --charcol: #26242a; 
-    --charcol-trans: rgba(38, 36, 42, 0.5); */
+    --charcol-trans: rgba(38, 36, 42, 0.5);
    
 }
 
@@ -88,6 +88,10 @@ body {
     text-transform: uppercase;
 }
 
+.text-medium {
+    font-size: 1.5rem;
+}
+
 .letter-spacing {
     letter-spacing: 2px;
 }
@@ -118,12 +122,29 @@ body {
     border-bottom: 2px solid var(--charcol);
 }
 
-.text-red {
+.form {
+    height: 35rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    width: 25rem;
+    height: 4rem;
+    background-color: var(--charcol);
     color: var(--red);
+}
+
+.form-control::placeholder {
+    color: var(--white);
 }
 
 .nav-logo {
     width: 15rem;
+    display: none;
 }
 
 .hero-image {
